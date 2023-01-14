@@ -20,8 +20,9 @@ Add preStop hook that calls this sidecar
     preStop:
       exec:
         command:
-          - "/usr/bin/curl"
-          - "localhost:8080/waitz"
+          - sh
+          - -c
+          - "/usr/bin/curl localhost:8080/waitz && /wait-shutdown"
 ```
 
 And add sidecar
