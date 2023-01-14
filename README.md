@@ -30,7 +30,7 @@ And add sidecar
 ```yaml
   extraContainers:
     - name: k8s-prestop-sidecar
-      image: ghcr.io/matti/k8s-prestop-sidecar:742dbb80dc68734547db97ad318df705f52bc7bd
+      image: ghcr.io/matti/k8s-prestop-sidecar@sha256:9cb58a8c79ca82ffead56599f882b56bab0c4b954621a543690414bf6ac737fb
       env:
         - name: "LOG"
           value: "yes"
